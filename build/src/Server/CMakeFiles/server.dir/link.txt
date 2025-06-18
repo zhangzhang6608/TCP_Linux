@@ -1,0 +1,1 @@
+/usr/bin/c++ -rdynamic CMakeFiles/server.dir/Server_Block.cpp.o -o ../../../bin/server 

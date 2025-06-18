@@ -1,0 +1,7 @@
+/root/TCP/build/CMakeFiles/edit_cache.dir
+/root/TCP/build/CMakeFiles/rebuild_cache.dir
+/root/TCP/build/src/CMakeFiles/edit_cache.dir
+/root/TCP/build/src/CMakeFiles/rebuild_cache.dir
+/root/TCP/build/src/Server/CMakeFiles/server.dir
+/root/TCP/build/src/Server/CMakeFiles/edit_cache.dir
+/root/TCP/build/src/Server/CMakeFiles/rebuild_cache.dir

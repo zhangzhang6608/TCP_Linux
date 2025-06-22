@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /root/TCP/build && $(CMAKE_COMMAND) -E cmake_progress_start /root/TCP/build/CMakeFiles /root/TCP/build/src/Server//CMakeFiles/progress.marks
-	cd /root/TCP/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/Server/all
+	cd /root/TCP/build && $(CMAKE_COMMAND) -E cmake_progress_start /root/TCP/build/CMakeFiles /root/TCP/build/src/Client//CMakeFiles/progress.marks
+	cd /root/TCP/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/Client/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /root/TCP/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /root/TCP/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/Server/clean
+	cd /root/TCP/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/Client/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,12 +103,12 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /root/TCP/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/Server/preinstall
+	cd /root/TCP/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/Client/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /root/TCP/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/Server/preinstall
+	cd /root/TCP/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/Client/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
@@ -117,90 +117,66 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-src/Server/CMakeFiles/server.dir/rule:
-	cd /root/TCP/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/Server/CMakeFiles/server.dir/rule
-.PHONY : src/Server/CMakeFiles/server.dir/rule
+src/Client/CMakeFiles/client.dir/rule:
+	cd /root/TCP/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/Client/CMakeFiles/client.dir/rule
+.PHONY : src/Client/CMakeFiles/client.dir/rule
 
 # Convenience name for target.
-server: src/Server/CMakeFiles/server.dir/rule
-.PHONY : server
+client: src/Client/CMakeFiles/client.dir/rule
+.PHONY : client
 
 # fast build rule for target.
-server/fast:
-	cd /root/TCP/build && $(MAKE) $(MAKESILENT) -f src/Server/CMakeFiles/server.dir/build.make src/Server/CMakeFiles/server.dir/build
-.PHONY : server/fast
+client/fast:
+	cd /root/TCP/build && $(MAKE) $(MAKESILENT) -f src/Client/CMakeFiles/client.dir/build.make src/Client/CMakeFiles/client.dir/build
+.PHONY : client/fast
 
-Server_Block.o: Server_Block.cpp.o
-.PHONY : Server_Block.o
-
-# target to build an object file
-Server_Block.cpp.o:
-	cd /root/TCP/build && $(MAKE) $(MAKESILENT) -f src/Server/CMakeFiles/server.dir/build.make src/Server/CMakeFiles/server.dir/Server_Block.cpp.o
-.PHONY : Server_Block.cpp.o
-
-Server_Block.i: Server_Block.cpp.i
-.PHONY : Server_Block.i
-
-# target to preprocess a source file
-Server_Block.cpp.i:
-	cd /root/TCP/build && $(MAKE) $(MAKESILENT) -f src/Server/CMakeFiles/server.dir/build.make src/Server/CMakeFiles/server.dir/Server_Block.cpp.i
-.PHONY : Server_Block.cpp.i
-
-Server_Block.s: Server_Block.cpp.s
-.PHONY : Server_Block.s
-
-# target to generate assembly for a file
-Server_Block.cpp.s:
-	cd /root/TCP/build && $(MAKE) $(MAKESILENT) -f src/Server/CMakeFiles/server.dir/build.make src/Server/CMakeFiles/server.dir/Server_Block.cpp.s
-.PHONY : Server_Block.cpp.s
-
-Server_Log.o: Server_Log.cpp.o
-.PHONY : Server_Log.o
+Client_block.o: Client_block.cpp.o
+.PHONY : Client_block.o
 
 # target to build an object file
-Server_Log.cpp.o:
-	cd /root/TCP/build && $(MAKE) $(MAKESILENT) -f src/Server/CMakeFiles/server.dir/build.make src/Server/CMakeFiles/server.dir/Server_Log.cpp.o
-.PHONY : Server_Log.cpp.o
+Client_block.cpp.o:
+	cd /root/TCP/build && $(MAKE) $(MAKESILENT) -f src/Client/CMakeFiles/client.dir/build.make src/Client/CMakeFiles/client.dir/Client_block.cpp.o
+.PHONY : Client_block.cpp.o
 
-Server_Log.i: Server_Log.cpp.i
-.PHONY : Server_Log.i
+Client_block.i: Client_block.cpp.i
+.PHONY : Client_block.i
 
 # target to preprocess a source file
-Server_Log.cpp.i:
-	cd /root/TCP/build && $(MAKE) $(MAKESILENT) -f src/Server/CMakeFiles/server.dir/build.make src/Server/CMakeFiles/server.dir/Server_Log.cpp.i
-.PHONY : Server_Log.cpp.i
+Client_block.cpp.i:
+	cd /root/TCP/build && $(MAKE) $(MAKESILENT) -f src/Client/CMakeFiles/client.dir/build.make src/Client/CMakeFiles/client.dir/Client_block.cpp.i
+.PHONY : Client_block.cpp.i
 
-Server_Log.s: Server_Log.cpp.s
-.PHONY : Server_Log.s
+Client_block.s: Client_block.cpp.s
+.PHONY : Client_block.s
 
 # target to generate assembly for a file
-Server_Log.cpp.s:
-	cd /root/TCP/build && $(MAKE) $(MAKESILENT) -f src/Server/CMakeFiles/server.dir/build.make src/Server/CMakeFiles/server.dir/Server_Log.cpp.s
-.PHONY : Server_Log.cpp.s
+Client_block.cpp.s:
+	cd /root/TCP/build && $(MAKE) $(MAKESILENT) -f src/Client/CMakeFiles/client.dir/build.make src/Client/CMakeFiles/client.dir/Client_block.cpp.s
+.PHONY : Client_block.cpp.s
 
-Server_main.o: Server_main.cpp.o
-.PHONY : Server_main.o
+Client_main.o: Client_main.cpp.o
+.PHONY : Client_main.o
 
 # target to build an object file
-Server_main.cpp.o:
-	cd /root/TCP/build && $(MAKE) $(MAKESILENT) -f src/Server/CMakeFiles/server.dir/build.make src/Server/CMakeFiles/server.dir/Server_main.cpp.o
-.PHONY : Server_main.cpp.o
+Client_main.cpp.o:
+	cd /root/TCP/build && $(MAKE) $(MAKESILENT) -f src/Client/CMakeFiles/client.dir/build.make src/Client/CMakeFiles/client.dir/Client_main.cpp.o
+.PHONY : Client_main.cpp.o
 
-Server_main.i: Server_main.cpp.i
-.PHONY : Server_main.i
+Client_main.i: Client_main.cpp.i
+.PHONY : Client_main.i
 
 # target to preprocess a source file
-Server_main.cpp.i:
-	cd /root/TCP/build && $(MAKE) $(MAKESILENT) -f src/Server/CMakeFiles/server.dir/build.make src/Server/CMakeFiles/server.dir/Server_main.cpp.i
-.PHONY : Server_main.cpp.i
+Client_main.cpp.i:
+	cd /root/TCP/build && $(MAKE) $(MAKESILENT) -f src/Client/CMakeFiles/client.dir/build.make src/Client/CMakeFiles/client.dir/Client_main.cpp.i
+.PHONY : Client_main.cpp.i
 
-Server_main.s: Server_main.cpp.s
-.PHONY : Server_main.s
+Client_main.s: Client_main.cpp.s
+.PHONY : Client_main.s
 
 # target to generate assembly for a file
-Server_main.cpp.s:
-	cd /root/TCP/build && $(MAKE) $(MAKESILENT) -f src/Server/CMakeFiles/server.dir/build.make src/Server/CMakeFiles/server.dir/Server_main.cpp.s
-.PHONY : Server_main.cpp.s
+Client_main.cpp.s:
+	cd /root/TCP/build && $(MAKE) $(MAKESILENT) -f src/Client/CMakeFiles/client.dir/build.make src/Client/CMakeFiles/client.dir/Client_main.cpp.s
+.PHONY : Client_main.cpp.s
 
 # Help Target
 help:
@@ -210,16 +186,13 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... server"
-	@echo "... Server_Block.o"
-	@echo "... Server_Block.i"
-	@echo "... Server_Block.s"
-	@echo "... Server_Log.o"
-	@echo "... Server_Log.i"
-	@echo "... Server_Log.s"
-	@echo "... Server_main.o"
-	@echo "... Server_main.i"
-	@echo "... Server_main.s"
+	@echo "... client"
+	@echo "... Client_block.o"
+	@echo "... Client_block.i"
+	@echo "... Client_block.s"
+	@echo "... Client_main.o"
+	@echo "... Client_main.i"
+	@echo "... Client_main.s"
 .PHONY : help
 
 

@@ -79,15 +79,33 @@ clean: src/clean
 
 # Recursive "all" directory target.
 src/all: src/Server/all
+src/all: src/Client/all
 .PHONY : src/all
 
 # Recursive "preinstall" directory target.
 src/preinstall: src/Server/preinstall
+src/preinstall: src/Client/preinstall
 .PHONY : src/preinstall
 
 # Recursive "clean" directory target.
 src/clean: src/Server/clean
+src/clean: src/Client/clean
 .PHONY : src/clean
+
+#=============================================================================
+# Directory level rules for directory src/Client
+
+# Recursive "all" directory target.
+src/Client/all: src/Client/CMakeFiles/client.dir/all
+.PHONY : src/Client/all
+
+# Recursive "preinstall" directory target.
+src/Client/preinstall:
+.PHONY : src/Client/preinstall
+
+# Recursive "clean" directory target.
+src/Client/clean: src/Client/CMakeFiles/client.dir/clean
+.PHONY : src/Client/clean
 
 #=============================================================================
 # Directory level rules for directory src/Server
@@ -111,12 +129,12 @@ src/Server/clean: src/Server/CMakeFiles/server.dir/clean
 src/Server/CMakeFiles/server.dir/all:
 	$(MAKE) $(MAKESILENT) -f src/Server/CMakeFiles/server.dir/build.make src/Server/CMakeFiles/server.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/Server/CMakeFiles/server.dir/build.make src/Server/CMakeFiles/server.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/TCP/build/CMakeFiles --progress-num=1,2 "Built target server"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/TCP/build/CMakeFiles --progress-num=4,5,6,7 "Built target server"
 .PHONY : src/Server/CMakeFiles/server.dir/all
 
 # Build rule for subdir invocation for target.
 src/Server/CMakeFiles/server.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/TCP/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/TCP/build/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/Server/CMakeFiles/server.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /root/TCP/build/CMakeFiles 0
 .PHONY : src/Server/CMakeFiles/server.dir/rule
@@ -129,6 +147,32 @@ server: src/Server/CMakeFiles/server.dir/rule
 src/Server/CMakeFiles/server.dir/clean:
 	$(MAKE) $(MAKESILENT) -f src/Server/CMakeFiles/server.dir/build.make src/Server/CMakeFiles/server.dir/clean
 .PHONY : src/Server/CMakeFiles/server.dir/clean
+
+#=============================================================================
+# Target rules for target src/Client/CMakeFiles/client.dir
+
+# All Build rule for target.
+src/Client/CMakeFiles/client.dir/all:
+	$(MAKE) $(MAKESILENT) -f src/Client/CMakeFiles/client.dir/build.make src/Client/CMakeFiles/client.dir/depend
+	$(MAKE) $(MAKESILENT) -f src/Client/CMakeFiles/client.dir/build.make src/Client/CMakeFiles/client.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/TCP/build/CMakeFiles --progress-num=1,2,3 "Built target client"
+.PHONY : src/Client/CMakeFiles/client.dir/all
+
+# Build rule for subdir invocation for target.
+src/Client/CMakeFiles/client.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/TCP/build/CMakeFiles 3
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/Client/CMakeFiles/client.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/TCP/build/CMakeFiles 0
+.PHONY : src/Client/CMakeFiles/client.dir/rule
+
+# Convenience name for target.
+client: src/Client/CMakeFiles/client.dir/rule
+.PHONY : client
+
+# clean rule for target.
+src/Client/CMakeFiles/client.dir/clean:
+	$(MAKE) $(MAKESILENT) -f src/Client/CMakeFiles/client.dir/build.make src/Client/CMakeFiles/client.dir/clean
+.PHONY : src/Client/CMakeFiles/client.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

@@ -5,3 +5,6 @@
 /root/TCP/build/src/Server/CMakeFiles/server.dir
 /root/TCP/build/src/Server/CMakeFiles/edit_cache.dir
 /root/TCP/build/src/Server/CMakeFiles/rebuild_cache.dir
+/root/TCP/build/src/Client/CMakeFiles/client.dir
+/root/TCP/build/src/Client/CMakeFiles/edit_cache.dir
+/root/TCP/build/src/Client/CMakeFiles/rebuild_cache.dir

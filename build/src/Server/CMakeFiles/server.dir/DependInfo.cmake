@@ -10,6 +10,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/root/TCP/src/Server/Server_Block.cpp" "src/Server/CMakeFiles/server.dir/Server_Block.cpp.o" "gcc" "src/Server/CMakeFiles/server.dir/Server_Block.cpp.o.d"
   "/root/TCP/src/Server/Server_Log.cpp" "src/Server/CMakeFiles/server.dir/Server_Log.cpp.o" "gcc" "src/Server/CMakeFiles/server.dir/Server_Log.cpp.o.d"
+  "/root/TCP/src/Server/Server_Reactor.cpp" "src/Server/CMakeFiles/server.dir/Server_Reactor.cpp.o" "gcc" "src/Server/CMakeFiles/server.dir/Server_Reactor.cpp.o.d"
+  "/root/TCP/src/Server/Server_Web.cpp" "src/Server/CMakeFiles/server.dir/Server_Web.cpp.o" "gcc" "src/Server/CMakeFiles/server.dir/Server_Web.cpp.o.d"
   "/root/TCP/src/Server/Server_main.cpp" "src/Server/CMakeFiles/server.dir/Server_main.cpp.o" "gcc" "src/Server/CMakeFiles/server.dir/Server_main.cpp.o.d"
   )
 

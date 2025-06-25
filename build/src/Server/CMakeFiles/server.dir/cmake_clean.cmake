@@ -5,6 +5,10 @@ file(REMOVE_RECURSE
   "CMakeFiles/server.dir/Server_Block.cpp.o.d"
   "CMakeFiles/server.dir/Server_Log.cpp.o"
   "CMakeFiles/server.dir/Server_Log.cpp.o.d"
+  "CMakeFiles/server.dir/Server_Reactor.cpp.o"
+  "CMakeFiles/server.dir/Server_Reactor.cpp.o.d"
+  "CMakeFiles/server.dir/Server_Web.cpp.o"
+  "CMakeFiles/server.dir/Server_Web.cpp.o.d"
   "CMakeFiles/server.dir/Server_main.cpp.o"
   "CMakeFiles/server.dir/Server_main.cpp.o.d"
 )

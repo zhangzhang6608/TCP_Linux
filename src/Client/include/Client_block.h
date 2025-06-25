@@ -17,4 +17,8 @@ static void send_oob(int socket_fd);
  */
 int Client_Block(int argc, char **argv);
 
+/**
+ * \brief 设置通信选项
+ */
+static void Sock_Opotion(int socket_fd);
 #endif

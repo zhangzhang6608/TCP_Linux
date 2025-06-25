@@ -1,6 +1,13 @@
 
 #include "Server_Log.h"
 
+bool User_Quit = false;
+
+void handle_connect(int sig)
+{
+    User_Quit = true;
+}
+
 void Output_Sock(sockaddr_in sock)
 {
     char IP_buf[sizeof(sock)];
@@ -25,3 +32,20 @@ void Output_Waring(sockaddr_in sock, Faile_Status states)
         break;
     }
 }
+
+char *Prameter(int argc, char **argv, int &Port, int &backlog)
+{
+
+    if (argc <= 2)
+    {
+        std::cout << "parameter is necessary: IP and Port" << std::endl;
+        return 0;
+    }
+
+    char *ip = argv[1];
+    Port = atoi(argv[2]);
+    backlog = 5; // 最大监听队列长度
+
+    return ip;
+}
+

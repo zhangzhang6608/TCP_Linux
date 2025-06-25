@@ -61,6 +61,11 @@
         "mutex": "cpp",
         "semaphore": "cpp",
         "stop_token": "cpp",
-        "thread": "cpp"
+        "thread": "cpp",
+        "internet": "cpp",
+        "timer": "cpp",
+        "sstream": "cpp",
+        "unordered_set": "cpp",
+        "set": "cpp"
     }
 }

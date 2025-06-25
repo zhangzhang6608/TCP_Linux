@@ -1,9 +1,9 @@
 #获取服务端的源文件
-file(GLOB SERVER_SRCS ${CMAKE_CURRENT_SOURCE_DIR}/*.cpp)
-message(STATUS "匹配到的源文件：${SERVER_SRCS}")
+file(GLOB Client_SRCS ${CMAKE_CURRENT_SOURCE_DIR}/*.cpp)
+message(STATUS "匹配到的源文件：${Client_SRCS}")
 
 #创建服务端可执行文件
-add_executable(client ${SERVER_SRCS})
+add_executable(client ${Client_SRCS})
 
 
 target_include_directories(client 

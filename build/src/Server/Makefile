@@ -178,6 +178,54 @@ Server_Log.cpp.s:
 	cd /root/TCP/build && $(MAKE) $(MAKESILENT) -f src/Server/CMakeFiles/server.dir/build.make src/Server/CMakeFiles/server.dir/Server_Log.cpp.s
 .PHONY : Server_Log.cpp.s
 
+Server_Reactor.o: Server_Reactor.cpp.o
+.PHONY : Server_Reactor.o
+
+# target to build an object file
+Server_Reactor.cpp.o:
+	cd /root/TCP/build && $(MAKE) $(MAKESILENT) -f src/Server/CMakeFiles/server.dir/build.make src/Server/CMakeFiles/server.dir/Server_Reactor.cpp.o
+.PHONY : Server_Reactor.cpp.o
+
+Server_Reactor.i: Server_Reactor.cpp.i
+.PHONY : Server_Reactor.i
+
+# target to preprocess a source file
+Server_Reactor.cpp.i:
+	cd /root/TCP/build && $(MAKE) $(MAKESILENT) -f src/Server/CMakeFiles/server.dir/build.make src/Server/CMakeFiles/server.dir/Server_Reactor.cpp.i
+.PHONY : Server_Reactor.cpp.i
+
+Server_Reactor.s: Server_Reactor.cpp.s
+.PHONY : Server_Reactor.s
+
+# target to generate assembly for a file
+Server_Reactor.cpp.s:
+	cd /root/TCP/build && $(MAKE) $(MAKESILENT) -f src/Server/CMakeFiles/server.dir/build.make src/Server/CMakeFiles/server.dir/Server_Reactor.cpp.s
+.PHONY : Server_Reactor.cpp.s
+
+Server_Web.o: Server_Web.cpp.o
+.PHONY : Server_Web.o
+
+# target to build an object file
+Server_Web.cpp.o:
+	cd /root/TCP/build && $(MAKE) $(MAKESILENT) -f src/Server/CMakeFiles/server.dir/build.make src/Server/CMakeFiles/server.dir/Server_Web.cpp.o
+.PHONY : Server_Web.cpp.o
+
+Server_Web.i: Server_Web.cpp.i
+.PHONY : Server_Web.i
+
+# target to preprocess a source file
+Server_Web.cpp.i:
+	cd /root/TCP/build && $(MAKE) $(MAKESILENT) -f src/Server/CMakeFiles/server.dir/build.make src/Server/CMakeFiles/server.dir/Server_Web.cpp.i
+.PHONY : Server_Web.cpp.i
+
+Server_Web.s: Server_Web.cpp.s
+.PHONY : Server_Web.s
+
+# target to generate assembly for a file
+Server_Web.cpp.s:
+	cd /root/TCP/build && $(MAKE) $(MAKESILENT) -f src/Server/CMakeFiles/server.dir/build.make src/Server/CMakeFiles/server.dir/Server_Web.cpp.s
+.PHONY : Server_Web.cpp.s
+
 Server_main.o: Server_main.cpp.o
 .PHONY : Server_main.o
 
@@ -217,6 +265,12 @@ help:
 	@echo "... Server_Log.o"
 	@echo "... Server_Log.i"
 	@echo "... Server_Log.s"
+	@echo "... Server_Reactor.o"
+	@echo "... Server_Reactor.i"
+	@echo "... Server_Reactor.s"
+	@echo "... Server_Web.o"
+	@echo "... Server_Web.i"
+	@echo "... Server_Web.s"
 	@echo "... Server_main.o"
 	@echo "... Server_main.i"
 	@echo "... Server_main.s"

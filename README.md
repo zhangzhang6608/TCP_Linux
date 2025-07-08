@@ -1,8 +1,16 @@
 数据提交
 
-git add .
 
-git commit -m "解释"
+git add file1
+git commit -m "提交file1的注释"
+
+git add OS
+git commit -m "提交OS的注释"
+
+git add .
+git commit -m "全部添加解释"
+
+git reset HEAD~1 //撤销本次添加
 
 git push origin main 
 
@@ -14,3 +22,10 @@ git push origin main
  3. Server_Log.cpp 实现日志系统以及一些输出功能
  4. Server_Reactor.cpp 实现Reactor监听模式
  5. Server_Proactor.cpp 实现Proactor监听模式
+ 6. Server_Signal.cpp 实现统一事件源控制
+    * 流程图如下:
+    ![unified event source](data/markdown/uni_EventSource.png "统一信号源处理流程")
+
+
+## Client端
+ 1. Client_block.cpp 连续重传

@@ -28,6 +28,6 @@ void Output_Waring(sockaddr_in sock, Faile_Status states);
  * @param Port 参数引用，解析端口
  * @param backlog 参数引用，最大队列长度
  */
-char *Prameter(int argc, char **argv, int &Port, int &backlog);
+char *Prameter(int argc, char **argv, ssize_t &Port, int &backlog);
 
 #endif

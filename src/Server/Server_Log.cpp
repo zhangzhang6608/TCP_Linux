@@ -33,7 +33,7 @@ void Output_Waring(sockaddr_in sock, Faile_Status states)
     }
 }
 
-char *Prameter(int argc, char **argv, int &Port, int &backlog)
+char *Prameter(int argc, char **argv, ssize_t &Port, int &backlog)
 {
 
     if (argc <= 2)

@@ -13,6 +13,8 @@
 #include <cstring>
 #include <string>
 
+
+
 /*********************************Reactor函数实例*********************************************** */
 Reactor::Reactor()
 {
@@ -276,7 +278,7 @@ void Worker::handleWrite(Task &task)
 
 int Server_Reactor(int argc, char **argv)
 {
-    int port = 0;
+    ssize_t port = 0;
     int backlog = 0; // 最大监听队列长度
     const char *ip = Prameter(argc, argv, port, backlog);
     backlog = 128;
